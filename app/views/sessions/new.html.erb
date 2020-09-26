@@ -10,11 +10,12 @@
 <div class="ui placeholder segment">
   <div class="ui two column very relaxed stackable grid">
     <div class="column">
+
       <%= form_for(:session, html: {class: "ui form", role: "form"}, url: login_path) do |f| %>
         <div class="field">
-          <%= f.label :email, "Username" %>
+          <%= f.label :username, "Username" %>
           <div class="ui left icon input">
-            <%= f.text_field :email, placeholder: "Username" %>
+            <%= f.text_field :username, placeholder: "Username" %>
             <i class="user icon""></i>
           </div>
         </div>
@@ -27,6 +28,7 @@
         </div>
         <%= f.button "Login", class: "ui red submit button" %>
         <% end %>
+        
     </div>
     <div class="middle aligned column">
       <%= link_to '<i class="signup icon"></i> Sign Up'.html_safe, login_path, class: "ui red big button" %>
