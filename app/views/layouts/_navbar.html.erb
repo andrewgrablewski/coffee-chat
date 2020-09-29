@@ -1,12 +1,6 @@
 <%= link_to '<i class="circular red coffee icon large inverted"></i>'.html_safe, root_path %>
-  <div class="ui dropdown item">
-    Chatrooms <i class="dropdown icon"></i>
-    <div class='menu'>
-      <a href="#" class="item">Chatroom 1</a>
-      <a href="#" class="item">Chatroom 2</a>
-      <a href="#" class="item">Chatroom 3</a>
-    </div>
-    </div>
+<%= link_to "Chatrooms", chatrooms_path, class: "item" %>
+  
   <%= link_to "Friends", users_path, class: "item" %>
 
   <div class="right menu">

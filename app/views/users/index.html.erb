@@ -31,15 +31,11 @@
   <div class="ui fluid raised card chatbox">
     <div class="content">
     <div class="ui inverted vertical menu">
-    <a class="item">
-      Home
-    </a>
-    <a class="item">
-      Chatrooms
-    </a>
-    <a class=" active item">
-      Friends
-    </a>
+      <%= link_to "Home", root_path, class: "item" %>
+      <%= link_to "Chatrooms", chatrooms_path, class: "item" %>
+        <div class=" active item">
+           Friends
+        </div>
       </div>
     </div>
  </div>

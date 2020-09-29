@@ -1,0 +1,14 @@
+<div class="extra content">
+  <%= form_for(message, html: {class: 'ui reply form', role: 'form'}, url: message_path, remote: true) do |f| %>
+  <p></p>
+  <div class="field">
+    <%= f.label :your_message %>
+    <div class="ui fluid icon input">
+      <%= f.text_field :body %>
+      <%= f.hidden_field :chatroom_id, value: chatroom.id %>
+      <%= f.button '<i class="bordered inverted red edit icon"></i>'.html_safe %>
+    </div>
+     </div>
+    <% end %>
+  </div>
+</div>
