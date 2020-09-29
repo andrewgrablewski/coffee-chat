@@ -17,13 +17,14 @@
           <% @chatrooms.each do |chatroom| %>
           <tr>
             <td data-label="Username"><%= link_to chatroom.topic, chatroom_path(chatroom) %></td>
-            <td data-label="Messages"><%= link_to chatroom.messages.count %></td>
+            <td data-label="Messages"><%= chatroom.messages.count %></td>
           </tr>
           <% end %>
         </tbody>
       </table>
-    </div>
-  </div>
+</div>
+</div>
+
 
 
 

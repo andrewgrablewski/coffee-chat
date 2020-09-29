@@ -16,7 +16,7 @@ class UsersController < ApplicationController
       flash[:success] = "Welcome to Coffee Chat"
       redirect_to root_path
     else
-      flash.now[:error] = "There something has gone wrong with signup"
+      flash.now[:error] = "Something has gone wrong with signup"
       render new
     end
   end

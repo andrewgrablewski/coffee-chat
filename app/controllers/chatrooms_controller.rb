@@ -12,11 +12,16 @@ class ChatroomsController < ApplicationController
       redirect_to login_path
     else
       @message = Message.new
-      @messages = @chatroom.messages
+      @messages = @chatroom.messages.custom_display
     end
   end
 
+
+
+
   private
+
+  
 
   def set_chatroom
     @chatroom= Chatroom.find(params[:id])
